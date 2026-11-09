@@ -1,8 +1,11 @@
-class room_unavailable(Exception):
-    pass 
-class invalid_date(Exception):
-    pass 
-class invaild_status_change(Exception):
+class StayEasyError(Exception):
     pass
-class booking_not_found(Exception):
+
+class room_unavailable(StayEasyError):
+    pass 
+class invalid_date(StayEasyError):
+    pass 
+class invaild_status_change(StayEasyError):
+    pass
+class booking_not_found(StayEasyError):
     pass 
