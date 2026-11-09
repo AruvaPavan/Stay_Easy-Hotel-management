@@ -1,8 +1,7 @@
 import csv
 
 import sqlite3
-from models import room_classes
-from menu import Room_Types
+from models import room_classes,Room_Types
 
 conn=sqlite3.connect("stayeasy.db")
 conn.execute("PRAGMA foreign_keys=ON")

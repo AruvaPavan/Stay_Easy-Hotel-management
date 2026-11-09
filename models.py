@@ -1,13 +1,13 @@
 from abc import ABC , abstractmethod
  
-
-
+Room_Types=["Standard","Deluxe","Suite"]
+floors=[1,2,3]
  
 weekend=("Friday","Saturday")
 class Room(ABC):
     base_price=0
     max_free_guests=2
-    need_breakfast=False
+    breakfast_optional=False
     max_guest=2
     @abstractmethod
     def Tariff(self,day):
@@ -27,7 +27,7 @@ class Room(ABC):
 class StandardRoom(Room):
     base_price=2500
     max_guest=2
-    need_breakfast=True
+    breakfast_optional=True
     def Tariff(self,day):
         if day not in weekend:
             return self.base_price

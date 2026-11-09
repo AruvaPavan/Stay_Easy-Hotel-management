@@ -1,0 +1,59 @@
+STAYEASY HOTEL RESERVATION AND BILLING SYSTEM
+=============================================
+A console program for a small hotel. It handles room search, bookings,
+check-in and check-out, cancellations, invoices and reports.
+Python 3, standard library only.
+
+FILES
+-----
+main.py           starts the program
+models.py         Room class and the Standard, Deluxe and Suite rooms
+exceptions.py     custom errors
+pricing.py        bill and refund calculation
+database.py      database setup, room search, loading rooms.csv
+reports.py        occupancy report, revenue report, CSV export
+menu.py           user input, booking steps and the main menu
+rooms.csv         list of rooms (room_no,room_type,floor)
+requirements.txt  empty, nothing extra to install
+
+SETUP AND RUN
+-------------
+1. Install Python 3 and open a terminal in the project folder.
+2. Create and activate a virtual environment:
+       python -m venv venv
+       venv\Scripts\activate         (Windows)
+       source venv/bin/activate      (Linux or macOS)
+3. pip install -r requirements.txt
+4. python main.py
+Run it from the project folder because rooms.csv is read from there.
+If the table layout changes, delete the old stayeasy.db once.
+
+MENU
+----
+1 Search room availability      7 Guest stay history
+2 Create booking                8 Occupancy report
+3 Check in                      9 Revenue report
+4 Check out (invoice)          10 Export bookings to CSV
+5 Cancel booking               11 Exit
+6 View booking details
+
+ROOMS
+-----
+Standard: Rs.2,500 per night, 2 guests, breakfast optional (Rs.350 each)
+Deluxe:   Rs.4,000 per night, 3 guests, breakfast included
+Suite:    Rs.7,500 per night, 4 guests, breakfast included
+
+RULES
+-----
+- Dates are typed as DD-MM-YYYY. A stay is 1 to 30 nights and check-in must be within the next 180 days.
+- The lowest-numbered free room of the chosen type is booked. If none is free, other free room types are shown and nothing is booked.
+- Friday and Saturday nights cost 20% more.
+- Deluxe and Suite charge Rs.800 per night for each guest after the second.
+- 7 nights or more: 10% off. 3 or more finished stays: 5% off.
+- GST is 12% for nights priced up to Rs.7,500 and 18% above that.
+- Status flow: CONFIRMED -> CHECKED_IN -> CHECKED_OUT, or CONFIRMED -> CANCELLED. Check-in is allowed only on the check-in date.
+- Refund: 7 or more days before check-in 100%, 2 to 6 days 50%, less than 2 days nothing.
+
+OUTPUT FILES
+------------
+stayeasy.db, app.log (skipped rooms.csv lines), invoices,bookings_export.csv

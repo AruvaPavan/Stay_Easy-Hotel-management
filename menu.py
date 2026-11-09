@@ -3,11 +3,11 @@ import sqlite3
 from datetime import datetime, date, timedelta
 from exceptions import room_unavailable,invalid_date,invaild_status_change,booking_not_found
 from database import conn, curr, Search_room_available
-from models import  room_classes
+from models import  room_classes,Room_Types
 from pricing import pricing, refund_amount
 from reports import occupancy_report, revenue_report, export_bookings
- 
-Room_Types=["Standard","Deluxe","Suite"]
+
+
 def all_date(text,limit=True):
     while True:
         try:

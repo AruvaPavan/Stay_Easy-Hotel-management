@@ -1,1 +1,2 @@
-booking_id,guest_name,mobile_number,email,room_no,check_in,check_out,num_guests,breakfast,status,amount_paid,refund_amount
+booking_id,guest_name,mobile_number,email,room_no,check_in,check_out,num_guests,breakfast,status,amount_paid,refund_amount
+BK0001,poiuytr,9876543210,poiuy@kjhg.com,201,2026-11-10,2026-11-14,3,0,CANCELLED,22400.0,0.0

@@ -97,7 +97,7 @@ def export_bookings():
         print("Database error. Could not export the bookings.")
         return
  
-    with open("bookings_export.csv", "w", newline="") as export_file:
+    with open("bookings_export.csv", "w") as export_file:
         writer = csv.writer(export_file)
         writer.writerow(["booking_id","guest_name","mobile_number","email","room_no","check_in",
                          "check_out","num_guests","breakfast","status","amount_paid","refund_amount"])
