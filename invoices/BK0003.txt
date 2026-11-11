@@ -1,0 +1,28 @@
+STAYEASY HOTEL - INVOICE
+Booking ID : BK0003
+Guest: iuytrew
+Mobile: 9876543222
+Email: iuytrew@gmail.com
+Room: 101 (Standard)
+Check-in: 2026-11-10
+Check-out: 2026-11-19 (9 night(s))
+Guests: 1
+
+Date        Day            Tariff  Extra guest  Breakfast  GST rate
+10-11-2026  Tuesday      2,500.00         0.00     350.00       12%
+11-11-2026  Wednesday    2,500.00         0.00     350.00       12%
+12-11-2026  Thursday     2,500.00         0.00     350.00       12%
+13-11-2026  Friday       3,000.00         0.00     350.00       12%
+14-11-2026  Saturday     3,000.00         0.00     350.00       12%
+15-11-2026  Sunday       2,500.00         0.00     350.00       12%
+16-11-2026  Monday       2,500.00         0.00     350.00       12%
+17-11-2026  Tuesday      2,500.00         0.00     350.00       12%
+18-11-2026  Wednesday    2,500.00         0.00     350.00       12%
+
+Room charges: Rs.23,500.00
+Extra guest : Rs.0.00
+Breakfast charges: Rs.3,150.00
+Stay discount: Rs.2,350.00
+Loyalty discount: Rs.0.00
+GST: Rs.2,916.00
+TOTAL AMOUNT: Rs.27,216.00

@@ -1,2 +1,8 @@
 booking_id,guest_name,mobile_number,email,room_no,check_in,check_out,num_guests,breakfast,status,amount_paid,refund_amount
-BK0001,poiuytr,9876543210,poiuy@kjhg.com,201,2026-11-10,2026-11-14,3,0,CANCELLED,22400.0,0.0
+BK0001,poiuy,9876543210,poiuyt@123.com,201,2026-11-10,2026-11-14,3,0,CANCELLED,22400.0,0.0
+BK0002,trewq@gmail.com,9876543211,trewq@gmail.com,101,2026-11-10,2026-11-11,1,1,CHECKED_OUT,3192.0,0
+BK0003,iuytrew,9876543222,iuytrew@gmail.com,101,2026-11-10,2026-11-19,1,1,CHECKED_OUT,27216.0,0
+BK0004,poiuy,9876543210,poiuyt@123.com,301,2026-11-10,2026-11-15,3,0,CHECKED_IN,51016.0,0
+BK0005,poiuy,9876543210,poiuyt@123.com,102,2026-11-10,2026-11-14,1,1,CHECKED_IN,13328.0,0
+BK0006,poiuy,9876543210,poiuyt@123.com,201,2026-11-10,2026-11-19,3,0,CHECKED_IN,45964.8,0
+BK0007,trewer,9876543234,trewer@fd.com,202,2026-11-18,2026-11-22,2,0,CANCELLED,19712.0,19712.0

@@ -1,0 +1,20 @@
+STAYEASY HOTEL - INVOICE
+Booking ID : BK0002
+Guest: trewq@gmail.com
+Mobile: 9876543211
+Email: trewq@gmail.com
+Room: 101 (Standard)
+Check-in: 2026-11-10
+Check-out: 2026-11-11 (1 night(s))
+Guests: 1
+
+Date        Day            Tariff  Extra guest  Breakfast  GST rate
+10-11-2026  Tuesday      2,500.00         0.00     350.00       12%
+
+Room charges: Rs.2,500.00
+Extra guest : Rs.0.00
+Breakfast charges: Rs.350.00
+Stay discount: Rs.0.00
+Loyalty discount: Rs.0.00
+GST: Rs.342.00
+TOTAL AMOUNT: Rs.3,192.00

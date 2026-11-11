@@ -144,7 +144,7 @@ def create_booking():
     prior_stays = curr.fetchone()[0]
  
     bill = pricing(chosen_type, check_in, check_out, number_of_people, breakfast, prior_stays)
-    print(f"\nRoom {room_no} ({chosen_type}), {bill['nights']} night(s)")
+    print(f"Room {room_no} ({chosen_type}), {bill['nights']} nights")
     print(f"Room charges: Rs.{bill['room_charges']}")
     print(f"Extra guests: Rs.{bill['extra_guest_charges']}")
     print(f"Breakfast: Rs.{bill['breakfast_charges']}")
@@ -236,7 +236,7 @@ def check_out():
         lines.append(f"Email: {email}")
         lines.append(f"Room: {room_no} ({rtype})")
         lines.append(f"Check-in: {cin}")
-        lines.append(f"Check-out: {cout} ({bill['nights']} night(s))")
+        lines.append(f"Check-out: {cout} ({bill['nights']} night)")
         lines.append(f"Guests: {guests}")
         lines.append("")
         lines.append(f"{'Date':<12}{'Day':<11}{'Tariff':>10}{'Extra guest':>13}{'Breakfast':>11}{'GST rate':>10}")
@@ -250,7 +250,7 @@ def check_out():
         lines.append(f"Loyalty discount: Rs.{bill['loyalty_discount']:,.2f}")
         lines.append(f"GST: Rs.{bill['gst']:,.2f}")
         lines.append(f"TOTAL AMOUNT: Rs.{bill['total']:,.2f}")
-        with open(f"invoices/BK{bid:04d}.txt", "w", encoding="utf-8") as invoice_file:
+        with open(f"invoices/BK{bid:04d}.txt", "w") as invoice_file:
             for line in lines:
                 invoice_file.write(line + "\n")
  
@@ -311,7 +311,7 @@ def view_booking():
                         from Booking b
                         join Guests g on g.mobile_number = b.mobile_number
                         join rooms r on r.room_no = b.room_no
-                        where b.booking_id=?""", (bid))
+                        where b.booking_id=?""", (bid,))
         row = curr.fetchone()
         if row is None:
             raise booking_not_found(f"No booking found with ID BK{bid:04d}")
